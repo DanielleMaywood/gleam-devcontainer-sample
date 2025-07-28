@@ -1,5 +1,5 @@
 {
-	"image": "ghcr.io/gleam-lang/gleam:v1.11.1-erlang",
+	"image": "ghcr.io/gleam-lang/gleam:v1.11.1-node-slim",
 	"customizations": {
 		"coder": {
 			"autoStart": true
