@@ -2,7 +2,17 @@
 	"image": "ghcr.io/gleam-lang/gleam:v1.11.1-node-slim",
 	"customizations": {
 		"coder": {
-			"autoStart": true
+			"autoStart": true,
+			"apps": [
+				{
+					"slug": "zed",
+					"displayName": "Zed Editor",
+					"url": "zed://ssh/${localEnv:CODER_WORKSPACE_AGENT_NAME}.${localEnv:CODER_WORKSPACE_NAME}.${localEnv:CODER_WORKSPACE_OWNER_NAME}.coder${containerWorkspaceFolder}",
+					"external": true,
+					"icon": "/icon/zed.svg"
+				}
+
+			]
 		}
 	}
 }
